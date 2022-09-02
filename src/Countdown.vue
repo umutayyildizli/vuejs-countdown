@@ -2,19 +2,19 @@
     <ul class="vuejs-countdown">
         <li v-if="days > 0">
             <p class="digit">{{ days | twoDigits }}</p>
-            <p class="text">{{ days > 1 ? 'days' : 'day' }}</p>
+            <p class="text">{{ days > 1 ? 'gün' : 'gün' }}</p>
         </li>
         <li>
             <p class="digit">{{ hours | twoDigits }}</p>
-            <p class="text">{{ hours > 1 ? 'hours' : 'hour' }}</p>
+            <p class="text">{{ hours > 1 ? 'saat' : 'saat' }}</p>
         </li>
         <li>
             <p class="digit">{{ minutes | twoDigits }}</p>
-            <p class="text">min</p>
+            <p class="text">dakika</p>
         </li>
         <li>
             <p class="digit">{{ seconds | twoDigits }}</p>
-            <p class="text">Sec</p>
+            <p class="text">saniye</p>
         </li>
     </ul>
 </template>
